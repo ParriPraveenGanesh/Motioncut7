@@ -1,0 +1,87 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  height: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://source.unsplash.com/1600x900/?wedding,celebration') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* RSVP Button */
+.rsvp-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ff4081;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.rsvp-button:hover {
+  background: #e91e63;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links a {
+  color: #ffdede;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
